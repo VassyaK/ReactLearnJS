@@ -1,26 +1,35 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 
-class Article extends Component {
-  state = {
-    isOpen: true,
-  };
+class Article extends PureComponent {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      count: 0,
+    };
+  }
+
+  // shouldComponentUpdate(nextProps, nextState) {
+  //   return this.state.isOpen !== nextState.isOpen;
+  // }
 
   render() {
-    const { article } = this.props;
+    const { article, isOpen, onButtonClick } = this.props;
 
-    const body = this.state.isOpen && (
+    const body = isOpen && (
       <section className="card-text">{article.text}</section>
     );
     return (
       <div className="card mx-auto" style={{ width: "50%" }}>
         <div className="card-header">
-          <h2>
+          <h2 onClick={this.incrementCounter}>
             {article.title}
+            clicked {this.state.count}
             <button
-              onClick={this.handleClick}
+              onClick={onButtonClick}
               className="btn btn-primary btn-lg float-end"
             >
-              {this.state.isOpen ? "Close" : "Open"}
+              {isOpen ? "Close" : "Open"}
             </button>
           </h2>
         </div>
@@ -34,10 +43,9 @@ class Article extends Component {
     );
   }
 
-  handleClick = () => {
-    console.log("---", "click");
+  incrementCounter = () => {
     this.setState({
-      isOpen: !this.state.isOpen,
+      count: this.state.count + 1,
     });
   };
 }

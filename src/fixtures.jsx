@@ -2,7 +2,7 @@
 export default [
   {
     id: "11q",
-    date: "2016-06-09T15:03:23.000Z",
+    date: "2022-06-09T15:03:23.000Z",
     title: "Comodo Lorem, ipsum dolor. ",
     text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, placeat!",
     comments: [
@@ -36,7 +36,7 @@ export default [
 
   {
     id: "111r",
-    date: "2016-05-19T23:03:23.000Z",
+    date: "2022-05-19T23:03:23.000Z",
     title: "Family Galomako",
     text: "Ex sunt sunt aliqu Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, placeat!",
     comments: [
@@ -65,7 +65,7 @@ export default [
 
   {
     id: "111w",
-    date: "2016-05-19T23:03:23.000Z",
+    date: "2022-05-19T23:03:23.000Z",
     title: "Family Zhukov",
     text: "Ex sunt sunt aliqu Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, placeat!",
     comments: [
@@ -89,7 +89,7 @@ export default [
 
   {
     id: "111q",
-    date: "2016-06-04T15:03:23.000Z",
+    date: "2022-06-04T15:03:23.000Z",
     title: "Ex sunt sunt aliqua",
     text: "Ex sunt sunt aliqu Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, placeat!",
     comments: [
@@ -118,7 +118,7 @@ export default [
 
   {
     id: "99q",
-    date: "2016-06-08T19:03:23.000Z",
+    date: "2022-06-08T19:03:23.000Z",
     title: "Lorem, ipsum dolor. ",
     text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, placeat!",
   },
